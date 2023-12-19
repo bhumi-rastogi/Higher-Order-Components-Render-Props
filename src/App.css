@@ -1,3 +1,4 @@
-.buttons{
+.click{
+  cursor: pointer;
   display: flex;
 }

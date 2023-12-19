@@ -1,16 +1,10 @@
 import React, { useState } from 'react'
+import LikeImg from './HighOrder';
 
-export default function LikeImage() {
+const LikeImage = ({ handleLike, likeCount, logo}) => (
+  <div>
+    <button onClick={handleLike}> Like {logo} {likeCount} </button>
+  </div>
+);
 
-  const [likeImageCounter, setLikeImageCounter] = useState(0);
-
-  const handleLikeImageCount = ()=>{
-    setLikeImageCounter(likeImageCounter+1);
-  }
-
-  return (
-    <div>
-      <button onClick={handleLikeImageCount}>Like Image {likeImageCounter}</button>
-    </div>
-  )
-}
+export default LikeImg(LikeImage, 'Image');

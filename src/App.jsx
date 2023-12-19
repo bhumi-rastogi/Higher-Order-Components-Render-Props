@@ -5,8 +5,8 @@ import LikePost from './components/LikePost';
 function App() {
   return (
     <div>
-      <h3>Some Blog</h3>
-      <div className='buttons'>
+      <h3>Bhumi's Blog</h3>
+      <div className='click'>
         <LikePost/>
         <LikeImage/>
       </div>
